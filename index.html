@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mohsen Nayebi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: Arial, sans-serif;
+        
+      }
+
+
+
+
+
+    
+
+
+    h2{
+      color: #4582b4;
+      font-size: 3em;
+    }
+      
+
+      .skills-container {
+        width: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .skill-item {
+        margin-bottom: 20px;
+      }
+
+      .skill-title {
+        font-size: 1.3em;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .skill-description {
+        font-size: 1em;
+        margin-bottom: 10px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: #29455a;
+      }
+
+      p {
+        color: w3-black;
+      }
+
+      b, strong {
+        color: #183144;
+        
+      }
+     
+
+
+
+      section b, section strong{
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        
+      }
+
+   
+      section:hover p:hover, 
+      section:hover li:hover {
+        transform: scale(1.01); /* Zoom the text further by 10% */
+      }
+
+
+      .w3-margin-right{
+        color:#29455a !important;
+        opacity: 1;
+      }
+
+      .w3-bar-item:hover{
+        background-color: #afc5d8 !important;
+        
+      }
+
+
+      section {
+        padding: 50px 30px;
+        margin: 10px 0;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        background-color: white;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      section:hover {
+        transform: scale(1.03);
+        /* Zoom in by 5% */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        /* Optional shadow effect for depth */
+      }
+
+      #contact {
+        background-color: #e5e4e4;
+      }
+
+      #contact:hover {
+        background-color: initial;
+        /* Revert to original background */
+        transform: none;
+        /* No zoom effect */
+        box-shadow: none;
+        /* No shadow effect */
+        transition: none;
+        /* No transition */
+      }
+
+      a.no-hover:hover {
+        text-decoration: underline;
+        font-size: inherit;
+      }
+
+      .w3-card {
+        height:450px;
+        border-radius: 5px 5px 5px 5px;
+        transition: transform 0.3s ease-in-out;
+        /* Smooth zoom */
+      }
+
+      .w3-card img {
+        border-radius: 8px 8px 0px 0px;
+      }
+
+      .w3-card h5{
+        font-family: 'Times New Roman', Times, serift;
+        color: #1a3449;
+        text-shadow: #091119;
+      }
+      .w3-card h5:hover{
+        font-weight: bold;
+      }
+
+      /* Zoom effect on hover for the entire card */
+      .w3-card:hover {
+        transform: scale(1.05);
+        /* Scale the whole card by 5% */
+      }
+
+      header {
+    background-color: #f5f5f5;
+    background-image: url('images/backgroun-linkedin.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+        opacity: 90%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+
+      footer {
+        background-color: #e5e4e4 !important;
+      }
+    </style>
+  </head>
+  <body class="w3-light-grey w3-content" style="max-width:1600px">
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar">
+      <br>
+      <div class="w3-container">
+        <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+          <i class="fa fa-remove"></i>
+        </a>
+        <img src="images/profile-image.jpg" style="width:90%; padding-left: 5%;" class="w3-round">
+        <br>
+        <br>
+        <h4 style="font-size:2em;">
+          <b>Mohsen </b>Nayebi
+        </h4>
+        <h6>PhD student, Computer Science</h6>
+      </div>
+      <div class="w3-bar-block">
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text">
+          <i class="fa fa-th-large fa-fw w3-margin-right"></i>About </a>
+        <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+          <i class="fa fa-laptop fa-fw w3-margin-right"></i>Projects </a>
+        <a href="#publications" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+          <i class="fa fa-book fa-fw w3-margin-right"></i>Publications </a>
+        <a href="#news" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+          <i class="fa fa-exclamation fa-fw w3-margin-right"></i>News </a>
+        <a href="#teaching" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+          <i class="fa fa-user fa-fw w3-margin-right"></i>Teaching </a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+          <i class="fa fa-envelope fa-fw w3-margin-right"></i>Contact </a>
+        <a href="Resume.pdf" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+          <i class="fa fa-download w3-margin-right"></i>Resume </a>
+      </div>
+      <div class="w3-panel w3-large">
+        <a href="https://www.linkedin.com/in/mohsen-nayebi/" target="_blank">
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </a>
+        <a href="https://github.com/mohsen-nayebi/" target="_blank">
+          <i class="fa fa-github w3-hover-opacity"></i>
+        </a>
+        <a href="https://scholar.google.com/citations?user=XZlL4SoAAAAJ#:~:text=Proceedings%20of%20the%2032nd%20ACM" target="_blank">
+          <i class="w3-hover-opacity">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 6%;">
+              <path d="M390.9 298.5c0 0 0 .1 .1 .1c9.2 19.4 14.4 41.1 14.4 64C405.3 445.1 338.5 512 256 512s-149.3-66.9-149.3-149.3c0-22.9 5.2-44.6 14.4-64h0c1.7-3.6 3.6-7.2 5.6-10.7c4.4-7.6 9.4-14.7 15-21.3c27.4-32.6 68.5-53.3 114.4-53.3c33.6 0 64.6 11.1 89.6 29.9c9.1 6.9 17.4 14.7 24.8 23.5c5.6 6.6 10.6 13.8 15 21.3c2 3.4 3.8 7 5.5 10.5zm26.4-18.8c-30.1-58.4-91-98.4-161.3-98.4s-131.2 40-161.3 98.4L0 202.7 256 0 512 202.7l-94.7 77.1z" />
+            </svg>
+          </i>
+        </a>
+        <a href="mailto:mohsen.nayebi@ku.edu" target="_blank">
+          <i class="fa fa-at w3-hover-opacity"></i>
+        </a>
+      </div>
+    </nav>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+      <!-- Header -->
+      <header id="about">
+        
+       
+        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()">
+          <i class="fa fa-bars "></i>
+        </span>
+        <div class="w3-container">
+          <h1 style="color: white; font-size: 4em;" >
+            <b style="color: white;" >Mohsen </b>Nayebi
+          </h1>
+          <div class="w3-section w3-bottombar w3-padding-16"></div>
+        </div>
+      </header>
+      <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+        <section id="about-me">
+          <h2 >
+            <i class="fa fa-th-large fa-fw w3-margin-right"></i><b style="color:#4582b4; ">About Me</b>
+          </h2>
+          
+          <p> I am currently pursuing a <strong>Ph.D. in Computer Science</strong> at The University of Kansas (KU), Kansas, US, where I started in January 2022. With over 3 years of experience in <strong>data science</strong> and <strong>machine learning development</strong>, I am focused on research in <strong>health informatics</strong>, particularly within the <strong>AI for Health lab</strong> under the guidance of Dr. Yao. </p>
+          <p> In parallel with my Ph.D., I am also completing a <strong>Master of Science in Computer Science</strong> at The University of Kansas (KU), Kansas, US, with a CGPA of 4/4. I am expected to graduate in May 2024. </p>
+          <p> I hold a <strong>Bachelor's degree in Mechanical Engineering</strong> from Isfahan University of Technology (IUT), Isfahan, Iran, where I graduated in March 2021 with a CGPA of 3.82/4. My undergraduate studies focused on the integration of <strong>Finite Element Method (FEM) analysis</strong> and <strong>machine learning</strong> for the dynamic analysis of <strong>cellular lattice structures</strong>. </p>
+          <p> For my graduate studies, I shifted my focus to <strong>computer science</strong>, emphasizing <strong>data mining applications</strong> in <strong>healthcare and medicine</strong>. My work involves analyzing large-scale real-world <strong>Electronic Health Records (EHRs)</strong> datasets to address critical topics like <strong>patient survival analysis</strong>, <strong>prescription recommendation systems</strong>, <strong>early diagnosis</strong>, and <strong>explainable AI</strong>—all aimed at improving healthcare outcomes. </p>
+          <p> I am actively seeking internship opportunities in <strong>data science</strong> and <strong>machine learning-related roles</strong>, where I can apply my research skills and hands-on experience to real-world problems. </p>
+          
+        </section>
+      </div>
+      <div class="w3-container skills-container">
+        <section id="technical-skills">
+          <h2 ><i class="fa fa-gear fa-fw w3-margin-right"></i>Technical Skills</h2>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">Machine Learning & AI</div>
+              <div style="font-size: 1em;"> Proficient in advanced AI techniques including <strong>Deep Learning (CNNs, RNNs, Transformers)</strong>, <strong>Generative AI</strong>, <strong>Explainable AI (XAI)</strong>, and <strong>Recommender Systems</strong>. Experienced in building and deploying AI models for <strong>NLP</strong>, <strong>computer vision</strong>, and <strong>healthcare analytics</strong>. </div>
+            </li>
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">Data Science</div>
+              <div style="font-size: 1em;"> Over 5 years of experience in <strong>data analysis</strong>, <strong>data visualization</strong>, and <strong>statistical modeling</strong>. Skilled in extracting actionable insights from large datasets to drive decision-making across various industries. </div>
+            </li>
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">Programming</div>
+              <div style="font-size: 1em;"> Expertise in <strong>Python</strong> for building machine learning models, with proficiency in <strong>SQL</strong> for data manipulation and <strong>Matlab</strong> for scientific computing and simulations. </div>
+            </li>
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">Libraries & Frameworks</div>
+              <div style="font-size: 1em;"> Advanced user of <strong>PyTorch</strong>, <strong>TensorFlow/Keras</strong>, <strong>Scikit-learn</strong>, and <strong>Hugging Face</strong> for building state-of-the-art machine learning models. Proficient in <strong>Pandas</strong>, <strong>NumPy</strong>, and <strong>SciPy</strong> for data manipulation and scientific computations, and in <strong>Matplotlib</strong>, <strong>Plotly</strong>, and <strong>Seaborn</strong> for creating data visualizations. </div>
+            </li>
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">AI Domains</div>
+              <div style="font-size: 1em;"> Extensive experience across multiple AI domains, including <strong>NLP</strong>, <strong>Health Informatics</strong>, <strong>Representation Learning</strong>, <strong>Time Series Analysis</strong>, <strong>Computer Vision</strong>, and <strong>Survival Analysis</strong>. </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+      
+
+
+      <div class="w3-padding-large" >
+        <section id="projects">
+          <h2><i class="fa fa-laptop fa-fw w3-margin-right"></i>Projects</h2>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">LLM-informed Ontology-aware Healthcare Representation Learning (2023)</div>
+              <div style="font-size: 1em; ">Graph-based attention model leverages <b>Large Language Models</b> to inject knowledge in health representation learning. Developed skills in <b>Graph Neural Networks (GNN)</b>, <b>attention mechanisms</b>, and <b>healthcare data representation</b>. <a href="https://github.com/username/LLM-ontology-health" target="_blank">GitHub Repository</a>
+              </div>
+            </li>
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">Contrastive Ontology-aware Healthcare Representation Learning (2023)</div>
+              <div style="font-size: 1em; ">Graph-based attention model meets <b>contrastive learning</b> to incorporate domain knowledge in representation learning. Gained expertise in <b>contrastive loss functions</b>, <b>domain adaptation</b>, and <b>representation learning</b>. <a href="https://github.com/username/contrastive-ontology-health" target="_blank">GitHub Repository</a>
+              </div>
+            </li>
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">Neural Program Synthesis-TransFill (2023)</div>
+              <div style="font-size: 1em;">A <b>transformer-based network</b> is trained on input/output examples and learns to generate a program for string transformations. Developed skills in <b>transformer architecture</b>, <b>program synthesis</b>, and <b>deep learning model training</b>. <a href="https://github.com/username/neural-program-synthesis" target="_blank">GitHub Repository</a>
+              </div>
+            </li>
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">Image Captioning (2023)</div>
+              <div style="font-size: 1em; ">Generating textual descriptions of images using a <b>CNN-based encoder (ResNet50)</b> and an <b>attention-based LSTM decoder</b>. Improved skills in <b>computer vision</b>, <b>image processing</b>, and <b>natural language generation</b>. <a href="https://github.com/username/image-captioning" target="_blank">GitHub Repository</a>
+              </div>
+            </li>
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">Image Generation using GAN (2022)</div>
+              <div style="font-size: 1em;">Using <b>GANs</b> for data augmentation and image-to-image translation ( <b>Pix2Pix</b>, <b>CycleGAN</b>). Gained hands-on experience with <b>generative adversarial networks</b>, <b>image augmentation</b>, and <b>unsupervised learning</b>. <a href="https://github.com/username/image-generation-gan" target="_blank">GitHub Repository</a>
+              </div>
+            </li>
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">Write Shakespeare! (2022)</div>
+              <div style="font-size: 1em; ">Developed an <b>LSTM-based NLP model</b> trained on Shakespearean writings for generating text in Shakespearean style. Enhanced skills in <b>natural language processing (NLP)</b>, <b>sequence modeling</b>, and <b>text generation</b>. <a href="https://github.com/username/write-shakespeare" target="_blank">GitHub Repository</a>
+              </div>
+            </li>
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">Dynamic Analysis of Cellular Lattice Structures (B.S. Thesis) (2020)</div>
+              <div style="font-size: 1em; ">Dynamic Analysis of Cellular Structures under high strain rate using <b>Finite Element Analysis (Abaqus)</b> and <b>Machine learning</b>. Developed skills in <b>finite element modeling</b>, <b>mechanical simulations</b>, and <b>applied machine learning</b>. <a href="https://github.com/username/cellular-lattice-analysis" target="_blank">GitHub Repository</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+      
+
+
+
+      <div class="w3-padding-large" >
+        <section id="publications">
+          <h2 ><i class="fa fa-book fa-fw w3-margin-right"></i>Publications</h2>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">Adversarial Attack on Patient Survival Models with Counterfactual EHR Perturbation</div>
+              <div style="font-size: 1em; ">Thrilled to share that our paper has been submitted to The Web Conference 2024. <a href="https://link-to-paper-1.com">View Paper</a>
+              </div>
+            </li>
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">Contrastive Learning of Temporal Distinctiveness for Survival Analysis in Electronic Health Records</div>
+              <div style="font-size: 1em; ">Published in Association for Computing Machinery, CIKM 2023. <a href="https://link-to-paper-2.com">View Paper</a>
+              </div>
+            </li>
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">Discovering Time-Aware Dependency in Electronic Health Records through Personalized Hidden Graph Inference</div>
+              <div style="font-size: 1em;">We are excited to announce that our paper has been submitted to The Web Conference 2024. <a href="https://link-to-paper-3.com">View Paper</a>
+              </div>
+            </li>
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">Enhancing Prediction of Subjective Measures via Attention-Based Patient Clustering: An Analysis of Patient-Reported Outcomes in Alzheimer's Disease</div>
+              <div style="font-size: 1em;">Our paper is under review at AMIA 2024. <a href="https://link-to-paper-4.com">View Paper</a>
+              </div>
+            </li>
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">MetaGene: Meta-Learning for Enhanced Lung Cancer Detection with Gene Expression Microarrays</div>
+              <div style="font-size: 1em; ">Currently under review at AMIA 2024. <a href="https://link-to-paper-5.com">View Paper</a>
+              </div>
+            </li>
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">Recurrent Neural Networks and Attention Score for Personalized Prediction and Interpretation of Patient-Reported Outcomes</div>
+              <div style="font-size: 1em; ">Submitted to The Journal of Biopharmaceutical Statistics 2024. <a href="https://link-to-paper-6.com">View Paper</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+      
+
+
+      <div class="w3-padding-large">
+        <section id="news">
+          <h2><i class="fa fa-exclamation fa-fw w3-margin-right"></i>News</h2>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">Adversarial Attack on Patient Survival Models with Counterfactual EHR Perturbation</div>
+              <div style="font-size: 1em;">I'm thrilled to announce that we have submitted our paper "Adversarial Attack on Patient Survival Models with Counterfactual EHR Perturbation" to The Web Conference 2024. <a href="https://link-to-paper-1.com">View Paper</a></div>
+            </li>
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">Contrastive Learning of Temporal Distinctiveness for Survival Analysis in Electronic Health Records</div>
+              <div style="font-size: 1em;">Excited to share that our paper "Contrastive Learning of Temporal Distinctiveness for Survival Analysis in Electronic Health Records" has been published in Association for Computing Machinery, CIKM 2023. <a href="https://link-to-paper-2.com">View Paper</a></div>
+            </li>
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">Discovering Time-Aware Dependency in Electronic Health Records through Personalized Hidden Graph Inference</div>
+              <div style="font-size: 1em;">We are pleased to announce that we have submitted our paper "Discovering Time-Aware Dependency in Electronic Health Records through Personalized Hidden Graph Inference" to The Web Conference 2024. <a href="https://link-to-paper-3.com">View Paper</a></div>
+            </li>
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">Enhancing Prediction of Subjective Measures via Attention-Based Patient Clustering: An Analysis of Patient-Reported Outcomes in Alzheimer's Disease</div>
+              <div style="font-size: 1em;">We are currently under review for our paper "Enhancing Prediction of Subjective Measures via Attention-Based Patient Clustering: An Analysis of Patient-Reported Outcomes in Alzheimer's Disease" at AMIA 2024. <a href="https://link-to-paper-4.com">View Paper</a></div>
+            </li>
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">MetaGene: Meta-Learning for Enhanced Lung Cancer Detection with Gene Expression Microarrays</div>
+              <div style="font-size: 1em;">We are delighted to share that our paper "MetaGene: Meta-Learning for Enhanced Lung Cancer Detection with Gene Expression Microarrays" is currently under review at AMIA 2024. <a href="https://link-to-paper-5.com">View Paper</a></div>
+            </li>
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">Recurrent Neural Networks and Attention Score for Personalized Prediction and Interpretation of Patient-Reported Outcomes</div>
+              <div style="font-size: 1em;">We have submitted our paper "Recurrent Neural Networks and Attention Score for Personalized Prediction and Interpretation of Patient-Reported Outcomes" to The Journal of Biopharmaceutical Statistics 2024. <a href="https://link-to-paper-6.com">View Paper</a></div>
+            </li>
+          </ul>
+        </section>
+      </div>
+      
+      
+
+      <div class="w3-padding-large" >
+        <section id="teaching">
+          <h2 ><i class="fa fa-user fa-fw w3-margin-right"></i>Teaching</h2>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">System Dynamics and Control Systems (ME 682) - Fall 2022</div>
+              <div style="font-size: 1em; ">Responsibilities: Explaining experiments to students, training them on lab instruments (e.g., Oscilloscope, FG, DMM, Power Supply), assisting with questions and troubleshooting, preparing instruments for each experiment, setting up model experiments, holding office hours, designing and grading tests, teaching Arduino programming, and recording training videos. <a href="https://drive.google.com/file/d/1-Gk1ujgeCOoQE6RJ0VIrEwhZH_DJNTTY/view?usp=sharing">View Class Video</a>
+              </div>
+            </li>
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">Mechanical Engineering Measurements and Experimentation (ME 455) - Spring 2022</div>
+              <div style="font-size: 1em; ">Responsibilities: Teaching select lectures, grading assignments and exams, holding office hours. <a href="https://mediahub.ku.edu/media/t/1_g7kvd2x1">View Class Video</a>
+              </div>
+            </li>
+            <li style="margin-bottom: 20px;">
+              <div style="font-size: 1.3em; font-weight: bold;">Advanced Data Science (EECS 700) - Fall 2022</div>
+              <div style="font-size: 1em; ">Responsibilities: Lecturing, holding office hours.</div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    
+      
+      
+      <!-- Images of Me -->
+      <div class="w3-padding-large w3-padding-16" id="gallery">
+        <div class="w3-row-padding w3-margin-top">
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="images/master-pic.png" style="width:100%; height:300px; object-fit: cover;">
+              <div class="w3-container">
+                <h5>Graduating with my Master’s degree in Computer Science from the University of Kansas, School of Engineering</h5>
+              </div>
+            </div>
+          </div>
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="images/master.jpg" style="width:100%; height:300px; object-fit: cover;">
+              <div class="w3-container">
+                <h5>Presenting my master’s defense at the University of Kansas, discussing machine learning applications in healthcare.</h5>
+              </div>
+            </div>
+          </div>
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="images/conf2.png" style="width:100%; height:300px; object-fit: cover;">
+              <div class="w3-container">
+                <h5>Delivering a talk on the use of Graph Neural Networks in patient survival analysis at the AI for Health Workshop.</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-row-padding w3-margin-top">
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="images/conf3.png" style="width:100%; height:300px; object-fit: cover;">
+              <div class="w3-container">
+                <h5>Collaborating on machine learning research during a conference session at The Web Conference 2024.</h5>
+              </div>
+            </div>
+          </div>
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="images/conf1.png" style="width:100%; height:300px; object-fit: cover;">
+              <div class="w3-container">
+                <h5>Showcasing new research on contrastive learning in health data at the 2023 Data Science Expo.</h5>
+              </div>
+            </div>
+          </div>
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="images/mount.jpg" style="width:100%; height:300px; object-fit: cover;">
+              <div class="w3-container">
+                <h5>Conquering Mount Elbert: A breathtaking journey to the summit of Colorado's highest peak.</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <footer class="w3-padding-large w3-container w3-padding-32  " style="margin:0;">
+      <div class="w3-row-padding" style="margin-left: 25%;">
+        <section id="contact">
+          <h2><i class="fa fa-envelope fa-fw w3-margin-right"></i>Contact</h2>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:mohsen.nayebi@ku.edu" class="no-hover" style="text-decoration: none;">mohsen.nayebi@ku.edu</a>
+          </p>
+          <p>
+            <strong>Phone:</strong>
+            <span>+1-123-456-7890</span>
+          </p>
+          <p>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/mohsen-nayebi/" class="no-hover" style="text-decoration: none;">linkedin.com/in/mohsen-nayebi</a>
+          </p>
+        </section>
+      </div>
+    </footer>
+    <!-- End page content -->
+    <script>
+      // Script to open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
