@@ -1,0 +1,306 @@
+[
+  {
+    "id": "hermes",
+    "title": "Dual-Scale Relational Graph Transformers for Ecosystem-Aware Fraud Detection",
+    "year": "2026",
+    "venue": "Manuscript under review",
+    "status": "Under review",
+    "authorNote": "Mohsen Nayebi Kerdabadi · First author",
+    "paper": null,
+    "code": null,
+    "slides": null,
+    "poster": null
+  },
+  {
+    "id": "complementary",
+    "title": "Complementary Evidence Reasoning over Structured and Unstructured Electronic Health Records",
+    "year": "2026",
+    "venue": "Manuscript under review",
+    "status": "Under review",
+    "authorNote": "Mohsen Nayebi Kerdabadi · Third author",
+    "paper": null,
+    "code": null,
+    "slides": null,
+    "poster": null
+  },
+  {
+    "id": "stealthalignment",
+    "title": "StealthAlignment: Continual LLM Safety Alignment with Adaptive, Recalibrated Evolutionary Adversarial Pools",
+    "year": "2026",
+    "venue": "Manuscript under review",
+    "status": "Under review",
+    "authorNote": "Mohsen Nayebi Kerdabadi · Third author",
+    "paper": null,
+    "code": null,
+    "slides": null,
+    "poster": null
+  },
+  {
+    "id": "refine",
+    "name": "REFINE",
+    "title": "REFINE: LLM Refinement over Budgeted Text-Attributed Graphs for Personalized Medical Concept Representation",
+    "year": "2026",
+    "venue": "EMNLP 2026 · Main Conference",
+    "status": "Accepted",
+    "authors": [
+      "Mohsen Nayebi Kerdabadi",
+      "Arya Hadizadeh Moghaddam",
+      "Dongjie Wang",
+      "Zijun Yao"
+    ],
+    "featured": "first",
+    "summary": "Patient-specific graph representations that combine reinforcement learning for budgeted knowledge retrieval with GNN encoding and LLM refinement.",
+    "paper": "https://arxiv.org/abs/2609.04415",
+    "code": "https://github.com/mohsen-nyb/REFINE",
+    "slides": null,
+    "poster": "assets/talks/REFINE-poster.pdf"
+  },
+  {
+    "id": "medco",
+    "name": "MedCo",
+    "title": "Text-Attributed Knowledge Graph Enrichment with Large Language Models for Medical Concept Representation",
+    "year": "2026",
+    "venue": "ACL 2026 · Main Conference",
+    "status": "Published",
+    "authors": [
+      "Mohsen Nayebi Kerdabadi",
+      "Arya Hadizadeh Moghaddam",
+      "Chen Chen",
+      "Dongjie Wang",
+      "Zijun Yao"
+    ],
+    "featured": "first",
+    "summary": "Enriching medical knowledge graphs with LLM-generated semantics, then jointly learning representations with a LoRA-tuned language model and a heterogeneous GNN.",
+    "paper": "https://aclanthology.org/2026.acl-long.753/",
+    "code": "https://github.com/mohsen-nyb/MedCo",
+    "slides": "assets/talks/MedCo-ACL2026-slides.pdf",
+    "poster": null
+  },
+  {
+    "id": "reta",
+    "name": "ReTA",
+    "title": "Import What You Need: Learning When and How to Augment EHR Graphs with External Knowledge",
+    "year": "2026",
+    "venue": "EMNLP 2026 · Main Conference",
+    "status": "Accepted",
+    "authors": [
+      "Chen Chen",
+      "Mohsen Nayebi Kerdabadi",
+      "Dongjie Wang",
+      "Mei Liu",
+      "Zijun Yao"
+    ],
+    "summary": "Learning when to import external knowledge—and whether to enrich features, modify graph structure, or skip augmentation—using a budget-aware reinforcement learning policy.",
+    "paper": "https://arxiv.org/abs/2609.01839",
+    "code": "https://github.com/ChenC2002/ReTA",
+    "slides": null,
+    "poster": null
+  },
+  {
+    "id": "rasper",
+    "name": "RASPER",
+    "title": "RASPER: Reward-Aligned Summarization of Clinical Notes for EHR Outcome Prediction",
+    "year": "2026",
+    "venue": "EMNLP 2026 · Main Conference",
+    "status": "Accepted",
+    "authors": [
+      "Arya Hadizadeh Moghaddam",
+      "Mohsen Nayebi Kerdabadi",
+      "Chen Chen",
+      "Dongjie Wang",
+      "Zijun Yao"
+    ],
+    "paper": null,
+    "code": null,
+    "slides": null,
+    "poster": null
+  },
+  {
+    "id": "reprompt",
+    "name": "RePrompT",
+    "title": "RePrompT: Recurrent Prompt Tuning for Integrating Structured EHR Encoders with Large Language Models",
+    "year": "2026",
+    "venue": "Findings of ACL 2026",
+    "status": "Published",
+    "authors": [
+      "Arya Hadizadeh Moghaddam",
+      "Drew Ross",
+      "Mohsen Nayebi Kerdabadi",
+      "Dongjie Wang",
+      "Zijun Yao"
+    ],
+    "summary": "Recurrent soft prompts connect structured EHR encoders to LLMs, preserving longitudinal patient context and incorporating population-level patterns.",
+    "paper": "https://aclanthology.org/2026.findings-acl.1334/",
+    "code": "https://github.com/KU-AI4H/RePrompT",
+    "slides": null,
+    "poster": null
+  },
+  {
+    "id": "metadrug",
+    "name": "MetaDrug",
+    "title": "User-Adaptive Meta-Learning for Cold-Start Medication Recommendation with Uncertainty Filtering",
+    "year": "2026",
+    "venue": "IEEE ICDE 2026",
+    "status": "Published",
+    "authors": [
+      "Arya Hadizadeh Moghaddam",
+      "Mohsen Nayebi Kerdabadi",
+      "Dongjie Wang",
+      "Mei Liu",
+      "Zijun Yao"
+    ],
+    "paper": "https://doi.org/10.1109/ICDE65706.2026.00298",
+    "code": "https://github.com/aryahm1375/MetaDrug",
+    "slides": null,
+    "poster": null
+  },
+  {
+    "id": "linko",
+    "name": "LINKO",
+    "title": "Multi-Ontology Integration with Dual-Axis Propagation for Medical Concept Representation",
+    "year": "2025",
+    "venue": "CIKM 2025 · Full Research Paper",
+    "status": "Published",
+    "authors": [
+      "Mohsen Nayebi Kerdabadi",
+      "Arya Hadizadeh Moghaddam",
+      "Dongjie Wang",
+      "Zijun Yao"
+    ],
+    "featured": "first",
+    "summary": "Connecting disease, drug, and procedure ontologies through LLM-informed initialization and knowledge propagation both within and across ontology hierarchies.",
+    "paper": "https://dl.acm.org/doi/10.1145/3746252.3761388",
+    "code": "https://github.com/mohsen-nyb/LINKO",
+    "slides": "assets/talks/LINKO-CIKM2025-slides.pdf",
+    "poster": null
+  },
+  {
+    "id": "atlas",
+    "name": "ATLAS",
+    "title": "Spatio-Temporal Directed Graph Learning for Account Takeover Fraud Detection",
+    "year": "2025",
+    "venue": "NeurIPS 2025 · NPGML Workshop",
+    "status": "Workshop paper",
+    "authors": [
+      "Mohsen Nayebi Kerdabadi",
+      "William Andrew Byron",
+      "Xin Sun",
+      "Amirfarrokh Iranitalab"
+    ],
+    "paper": "https://openreview.net/pdf/16c25804b9ead3e67a9b125986cc3c5f18908030.pdf",
+    "code": null,
+    "slides": null,
+    "poster": "assets/talks/ATLAS-poster.pdf"
+  },
+  {
+    "id": "pro",
+    "title": "Recurrent Neural Networks and Attention Scores for Personalized Prediction and Interpretation of Patient-Reported Outcomes",
+    "year": "2025",
+    "venue": "Journal of Biopharmaceutical Statistics",
+    "status": "Published",
+    "authors": [
+      "Jinxiang Hu",
+      "Mohsen Nayebi Kerdabadi",
+      "Xiaohang Mei",
+      "Joseph Cappelleri",
+      "Richard Barohn",
+      "Zijun Yao"
+    ],
+    "paper": "https://doi.org/10.1080/10543406.2025.2469884",
+    "code": "https://github.com/mohsen-nyb/interpretable-pro-based-sequential-pain-prediction",
+    "slides": null,
+    "poster": null
+  },
+  {
+    "id": "hidden-graph",
+    "title": "Discovering Time-Aware Hidden Dependencies with Personalized Graphical Structure in Electronic Health Records",
+    "year": "2025",
+    "venue": "ACM Transactions on Knowledge Discovery from Data · Online 2024; issue 2025",
+    "status": "Published",
+    "authors": [
+      "Arya Hadizadeh Moghaddam",
+      "Mohsen Nayebi Kerdabadi",
+      "Bin Liu",
+      "Mei Liu",
+      "Zijun Yao"
+    ],
+    "paper": "https://doi.org/10.1145/3709143",
+    "code": null,
+    "slides": null,
+    "poster": null
+  },
+  {
+    "id": "arci",
+    "name": "ARCI",
+    "title": "Contrastive Learning on Medical Intents for Sequential Prescription Recommendation",
+    "year": "2024",
+    "venue": "CIKM 2024 · Full Research Paper",
+    "status": "Published",
+    "authors": [
+      "Arya Hadizadeh Moghaddam",
+      "Mohsen Nayebi Kerdabadi",
+      "Mei Liu",
+      "Zijun Yao"
+    ],
+    "paper": "https://doi.org/10.1145/3627673.3679836",
+    "code": null,
+    "slides": null,
+    "poster": null
+  },
+  {
+    "id": "metagene",
+    "name": "MetaGene",
+    "title": "Meta-Learning on Augmented Gene Expression Profiles for Enhanced Lung Cancer Detection",
+    "year": "2024",
+    "venue": "AMIA 2024 · Annual Symposium",
+    "status": "Published",
+    "authors": [
+      "Arya Hadizadeh Moghaddam",
+      "Mohsen Nayebi Kerdabadi",
+      "Cuncong Zhong",
+      "Zijun Yao"
+    ],
+    "paper": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12099339/",
+    "code": "https://github.com/aryahm1375/MetaGene",
+    "slides": null,
+    "poster": null
+  },
+  {
+    "id": "otcsurv",
+    "name": "OTCSurv",
+    "title": "Contrastive Learning of Temporal Distinctiveness for Survival Analysis in Electronic Health Records",
+    "year": "2023",
+    "venue": "CIKM 2023 · Full Research Paper",
+    "status": "Published",
+    "authors": [
+      "Mohsen Nayebi Kerdabadi",
+      "Arya Hadizadeh Moghaddam",
+      "Bin Liu",
+      "Mei Liu",
+      "Zijun Yao"
+    ],
+    "paper": "https://doi.org/10.1145/3583780.3614824",
+    "code": "https://github.com/mohsen-nyb/OTCSurv",
+    "slides": "assets/talks/OTCSurv-CIKM2023-slides.pdf",
+    "poster": null
+  },
+  {
+    "id": "survattack",
+    "name": "SurvAttack",
+    "title": "SurvAttack: Black-Box Attack on Survival Models through Ontology-Informed EHR Perturbation",
+    "year": "Journal article",
+    "venue": "ACM Transactions on Computing for Healthcare",
+    "status": "",
+    "authors": [
+      "Mohsen Nayebi Kerdabadi",
+      "Arya Hadizadeh Moghaddam",
+      "Bin Liu",
+      "Mei Liu",
+      "Zijun Yao"
+    ],
+    "paper": null,
+    "code": "https://github.com/mohsen-nyb/SurvAttack",
+    "slides": null,
+    "poster": "assets/talks/SurvAttack-poster.pdf"
+  }
+]
