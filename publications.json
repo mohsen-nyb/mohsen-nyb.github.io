@@ -3,13 +3,20 @@
     "id": "hermes",
     "title": "Dual-Scale Relational Graph Transformers for Ecosystem-Aware Fraud Detection",
     "year": "2026",
-    "venue": "Manuscript under review",
-    "status": "Under review",
-    "authorNote": "Mohsen Nayebi Kerdabadi · First author",
-    "paper": null,
+    "venue": "NeurIPS 2026 · Geometric Distributional Deep Learning (GDDL) Workshop",
+    "status": "Accepted",
+    "paper": "https://arxiv.org/abs/2610.04138",
     "code": null,
     "slides": null,
-    "poster": null
+    "poster": null,
+    "name": "HERMES",
+    "authors": [
+      "Mohsen Nayebi Kerdabadi",
+      "Xinrou Li",
+      "Yao Xiao",
+      "Zijun Yao",
+      "Xin Sun"
+    ]
   },
   {
     "id": "complementary",
